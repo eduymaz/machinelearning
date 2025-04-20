@@ -59,23 +59,29 @@ Bu proje, yazılım geliştirici pozisyonu için başvuran adayların tecrübe y
 
 ## 📁 Proje Yapısı
 ```
-recruiting/
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-│   └── hiring_prediction.ipynb
-├── src/
-│   ├── data_generation.py
-│   ├── model_training.py
-│   ├── prediction.py
-│   └── api.py
-├── requirements.txt
-└── README.md
+hiring-prediction/
+├── data/                      # Veri klasörü
+│   ├── raw/                   # Ham veriler
+│   │   └── candidates.csv     # Aday verileri
+│   └── processed/            # İşlenmiş veriler
+│       ├── model.joblib      # Eğitilmiş model
+│       ├── scaler.joblib     # Ölçeklendirici
+│       ├── confusion_matrix.png  # Karışıklık matrisi
+│       └── decision_boundary.png # Karar sınırı görseli
+│
+├── src/                       # Kaynak kodlar
+│   ├── data_generation.py    # Veri oluşturma
+│   ├── model_training.py     # Model eğitimi
+│   └── prediction.py         # Tahmin yapma
+│
+└── notebooks/                 # Jupyter notebook'lar
+    ├── hiring_prediction.ipynb  # Ana analiz ve görselleştirme
+    ├── ARGE.ipynb  # Arge çalışmalarının yer aldığı notebook 
+    └── candidates.csv     # Aday verileri
 ```
 
 ## 🛠️ Teknolojiler
-- Python 3.8+
+- Python 3.12+
 - Scikit-learn
 - Faker
 - FastAPI
