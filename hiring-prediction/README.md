@@ -114,8 +114,8 @@ python src/api.py
 ## 🔍 Sonraki Adımlar
 - Daha fazla özellik eklenmesi
 - Model optimizasyonu
-- Web arayüzü geliştirilmesi
-- Gerçek zamanlı tahmin sistemi
+-- Web arayüzü geliştirilmesi (...)
+-- Gerçek zamanlı tahmin sistemi (...)
 
 ---
 
