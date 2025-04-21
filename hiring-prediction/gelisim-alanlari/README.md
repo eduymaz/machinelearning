@@ -6,11 +6,17 @@ Bu klasör, projenin gelişim alanlarını içeren çalışmaları barındırır
 
 ```
 gelisim-alanlari/
+├── data/                      # Veri klasörü
+│   ├── raw/                   # Ham veriler
+│   │   └── candidates.csv     # Aday verileri
+│   └── processed/            # İşlenmiş veriler
+│       ├── model.joblib      # Eğitilmiş model
+│       └── scaler.joblib     # Ölçeklendirici
 ├── src/
 │   ├── kernel_denemeleri.py    # Farklı kernel'ların test edilmesi
 │   ├── api.py                  # FastAPI servisi
 │   └── parametre_tuning.py     # Model parametrelerinin optimizasyonu
-└── notebooks/                  # Analiz notebook'ları
+                
 ```
 
 ## 📋 Gelişim Alanları
