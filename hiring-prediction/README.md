@@ -1,63 +1,63 @@
 # 🎯 İşe Alımda Aday Seçimi: SVM ile Başvuru Değerlendirme
 
-## 📋 Proje Özeti
+## 📋 1. Proje Özeti
 Bu proje, yazılım geliştirici pozisyonu için başvuran adayların tecrübe yılı ve teknik sınav puanına göre işe alınıp alınmamasını tahmin eden bir makine öğrenimi modeli geliştirmeyi amaçlamaktadır.
 
-## 🎯 Hedefler
+## 🎯 2. Hedefler
 - SVM (Support Vector Machine) kullanarak aday değerlendirme modeli oluşturma
 - Veri üretimi ve ön işleme
 - Model eğitimi ve değerlendirme
 - Tahmin servisi oluşturma
 
-## 📊 Veri Yapısı
+## 📊 3. Veri Yapısı
 - **tecrube_yili**: Adayın toplam yazılım deneyimi (0-10 yıl)
 - **teknik_puan**: Teknik sınav puanı (0-100)
 - **etiket**: 
   - 1: İşe alınmadı
   - 0: İşe alındı
 
-## 🎯 Etiketleme Kriteri
+## 🎯 4. Etiketleme Kriteri
 - Tecrübesi 2 yıldan az VE sınav puanı 60'tan düşük olanlar işe alınmıyor.
 
-## 📋 Görevler
+## 📋 5. Görevler
 
-### 1. Veri Üretimi
+### 5.1. Veri Üretimi
 - Faker kütüphanesi ile 200 başvuru verisi üretimi
 - Tecrübe ve teknik puan dağılımlarının oluşturulması
 - Etiketleme kriterine göre veri etiketleme
 
-### 2. Veri Ön İşleme
+### 5.2. Veri Ön İşleme
 - Veri setinin eğitim ve test olarak ayrılması
 - StandardScaler ile veri ölçeklendirme
 - Veri görselleştirme
 
-### 3. Model Geliştirme
+### 5.3. Model Geliştirme
 - SVC(kernel='linear') modelinin eğitimi
 - Karar sınırının görselleştirilmesi
 - Model performans metriklerinin hesaplanması
 
-### 4. Tahmin Sistemi
+### 5.4. Tahmin Sistemi
 - Kullanıcıdan tecrübe ve teknik puan alarak tahmin yapma
 - Tahmin sonuçlarının görselleştirilmesi
 
-### 5. Model Değerlendirme
+### 5.5. Model Değerlendirme
 - accuracy_score hesaplama
 - confusion_matrix oluşturma
 - classification_report ile detaylı analiz
 
-## 🚀 Gelişim Alanları
+## 🚀 6. Gelişim Alanları
 
-### 1. Model İyileştirme
+### 6.1. Model İyileştirme
 - Farklı kernel'lerin denenmesi
 - Parametre optimizasyonu (C, gamma)
 - Cross-validation
 
-### 2. API Geliştirme
+### 6.2. API Geliştirme
 - FastAPI ile tahmin servisi oluşturma
 - Swagger UI entegrasyonu
 - API dokümantasyonu
 
-## 📁 Proje Yapısı
+## 📁 7. Proje Yapısı
 ```
 hiring-prediction/
 ├── data/                      # Veri klasörü
@@ -81,7 +81,7 @@ hiring-prediction/
 │   │   └── processed/            # İşlenmiş veriler
 │   │       ├── model.joblib      # Eğitilmiş model
 │   │       └── scaler.joblib     # Ölçeklendirici
-    ├── src/                       # Kaynak kodlar
+│   ├── src/                       # Kaynak kodlar
 │   │    ├── kernel_denemeleri.py    # Veri oluşturma
 │   │    ├── parametre_tuning.py     # Model eğitimi/modelde güncelleme
 │   │    └── api.py         # Swager bağlanma api
@@ -93,7 +93,7 @@ hiring-prediction/
     └── candidates.csv     # Aday verileri
 ```
 
-## 🛠️ Teknolojiler
+## 🛠️ 8. Teknolojiler
 - Python 3.12+
 - Scikit-learn
 - Faker
@@ -102,7 +102,7 @@ hiring-prediction/
 - Pandas
 - NumPy
 
-## 🚀 Kurulum
+## 🚀 9. Kurulum
 ```bash
 # Gerekli paketlerin yüklenmesi
 pip install -r requirements.txt
@@ -117,18 +117,18 @@ python src/model_training.py
 python src/api.py
 ```
 
-## 📊 Performans Metrikleri
+## 📊 10. Performans Metrikleri
 - Accuracy
 - Precision
 - Recall
 - F1-Score
 - Confusion Matrix
 
-## 🔍 Sonraki Adımlar
+## 🔍 11. Sonraki Adımlar
 - Daha fazla özellik eklenmesi
 - Model optimizasyonu
-  - Web arayüzü geliştirilmesi (...)
-  - Gerçek zamanlı tahmin sistemi (...)
+- Web arayüzü geliştirilmesi
+- Gerçek zamanlı tahmin sistemi
 
 ---
 
