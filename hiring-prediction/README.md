@@ -74,6 +74,19 @@ hiring-prediction/
 │   ├── model_training.py     # Model eğitimi
 │   └── prediction.py         # Tahmin yapma
 │
+├── gelisim-alanlari/
+│   ├── data/                      # Veri klasörü
+│   │   ├── raw/                   # Ham veriler
+│   │   │   └── candidates.csv     # Aday verileri
+│   │   └── processed/            # İşlenmiş veriler
+│   │       ├── model.joblib      # Eğitilmiş model
+│   │       └── scaler.joblib     # Ölçeklendirici
+    ├── src/                       # Kaynak kodlar
+│   │    ├── kernel_denemeleri.py    # Veri oluşturma
+│   │    ├── parametre_tuning.py     # Model eğitimi/modelde güncelleme
+│   │    └── api.py         # Swager bağlanma api
+│               
+│
 └── notebooks/                 # Jupyter notebook'lar
     ├── hiring_prediction.ipynb  # Ana analiz ve görselleştirme
     ├── ARGE.ipynb  # Arge çalışmalarının yer aldığı notebook 
