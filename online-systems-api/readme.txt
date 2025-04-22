@@ -1,0 +1,1 @@
+Lecture 5 içerisinde verilen Proje I kapsamında hazırlanmıştır.
