@@ -15,6 +15,7 @@ Bu repository, Turkcell Geleceği Yazan Kadınlar eğitim programı kapsamında 
 │   └── DBSCAN/
 ├── hiring-prediction/
 ├── online-system-api/
+├── northwind-customer-behavior-prediction
 └── lectures/
 ```
 
@@ -48,6 +49,9 @@ DBSCAN (Density-Based Spatial Clustering of Applications with Noise), yoğunluk 
 
 ### 🌐 online-system-api
 Online sistem için geliştirilmiş RESTful API projesidir. Kullanıcı yönetimi, veri işleme ve sistem entegrasyonu gibi temel işlevleri içerir.
+
+### 📦 northwind-customer-behavior-prediction
+Northwind veritabanı üzerinden müşteri davranışlarını analiz eden ve sipariş tahmini, iade riski skoru ile yeni ürün satın alma potansiyelini öngören derin öğrenme tabanlı bir projedir.
 
 ## 📚 Eğitim Materyalleri
 `lectures/` klasörü, eğitim sürecinde kullanılan tüm ders notlarını ve örnekleri içermektedir.
