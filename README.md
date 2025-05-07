@@ -16,6 +16,7 @@ Bu repository, Turkcell Geleceği Yazan Kadınlar eğitim programı kapsamında 
 ├── hiring-prediction/
 ├── online-system-api/
 ├── northwind-customer-behavior-prediction
+├── customer_order_prediction
 └── lectures/
 ```
 
