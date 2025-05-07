@@ -53,5 +53,7 @@ Online sistem için geliştirilmiş RESTful API projesidir. Kullanıcı yönetim
 ### 📦 northwind-customer-behavior-prediction
 Northwind veritabanı üzerinden müşteri davranışlarını analiz eden ve sipariş tahmini, iade riski skoru ile yeni ürün satın alma potansiyelini öngören derin öğrenme tabanlı bir projedir.
 
+### 🍄 customer_order_prediction
+
 ## 📚 Eğitim Materyalleri
 `lectures/` klasörü, eğitim sürecinde kullanılan tüm ders notlarını ve örnekleri içermektedir.
