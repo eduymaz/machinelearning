@@ -1,0 +1,10 @@
+STACKING AND BLENDING
+
+
+## 1 ## 
+Stacking 
+Level 0 - (Base Learners) Farklı algoritmalarla birden fazla modele ulaşıyoruz.
+Level 1 - (Meta Learners) Base modellerin çıktısıyla (tahminleriyle) eğittiğimiz ikinci seviye güçlü modele
+
+Avantaj : Doğruluk oranımız artıyor 
+Dezavantaj : Performans

@@ -1,0 +1,7 @@
+Northwind veritabanında bir müşterinin siparişinin iptal edilme olasılığını tahmin etmek istiyoruz.
+  Orders, Order_Details, Customers ve Products tablolarını kullanarak hem müşteri davranışlarını
+  hem de sipariş özelliklerini dikkate alacak şekilde bir makine öğrenmesi veri seti oluşturun.
+   Siparişin iptal edildiğini varsaymak için mantıklı bir kural geliştirmeli 
+   (örneğin ShippedDate'in çok geç olması veya hiç gönderilmemesi gibi), 
+   ardından bu hedef değişkeni tahmin etmek üzere stacking ve blending yöntemlerini
+    uygulayarak farklı algoritmalarla karşılaştırıp bir analiz yapınız
