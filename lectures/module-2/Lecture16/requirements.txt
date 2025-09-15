@@ -1,0 +1,59 @@
+# Lecture 16: OCR Teknolojileri - Gerekli Paketler
+# ================================================
+
+# Temel görüntü işleme
+opencv-python==4.8.1.78
+Pillow==10.0.0
+numpy==1.24.3
+
+# Açık kaynaklı OCR kütüphaneleri
+pytesseract==0.3.10
+easyocr==1.7.0
+paddlepaddle==2.5.1
+paddleocr==2.7.0.3
+
+# Bulut servisleri
+boto3==1.28.57              # AWS Textract
+google-cloud-vision==3.4.4  # Google Cloud Vision
+azure-cognitiveservices-vision-computervision==0.9.0  # Azure Computer Vision
+
+# Yardımcı kütüphaneler
+requests==2.31.0
+json5==0.9.14
+tqdm==4.66.1
+
+# Veri işleme
+pandas==2.0.3
+matplotlib==3.7.2
+
+# Web servisleri için (opsiyonel)
+flask==2.3.3
+fastapi==0.103.1
+uvicorn==0.23.2
+
+# Jupyter notebook desteği (opsiyonel)
+jupyter==1.0.0
+ipython==8.14.0
+
+# Performans ve debugging
+psutil==5.9.5
+memory-profiler==0.61.0
+
+# Kurulum notları:
+# ===============
+# 1. Tesseract'ı sistemden kurun:
+#    macOS: brew install tesseract
+#    Ubuntu: sudo apt install tesseract-ocr
+#    Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#
+# 2. Türkçe dil paketi (opsiyonel):
+#    macOS: brew install tesseract-lang
+#    Ubuntu: sudo apt install tesseract-ocr-tur
+#
+# 3. Bu dosyayı kullanarak kurulum:
+#    pip install -r requirements.txt
+#
+# 4. Bulut servisleri için:
+#    - AWS: aws configure (credentials ayarlayın)
+#    - Google Cloud: service account key indirin
+#    - Azure: subscription key alın
