@@ -1,0 +1,45 @@
+# YOLO8 Turkish License Plate Dataset Configuration
+# Bu dosya YOLO8 modelinin eğitimi için gerekli dataset konfigürasyonunu içerir
+
+# Dataset yolları
+# Mutlak yolları kullanın veya bu dosyaya göre relative yollar
+path: ./datasets/turkish_license_plate  # Dataset ana klasörü
+train: train/images  # Eğitim görüntüleri klasörü
+val: val/images      # Doğrulama görüntüleri klasörü  
+test: test/images    # Test görüntüleri klasörü (opsiyonel)
+
+# Sınıf sayısı
+nc: 1  # Sadece plaka sınıfı
+
+# Sınıf isimleri
+names:
+  0: license_plate
+
+# Dataset klasör yapısı:
+# datasets/turkish_license_plate/
+# ├── train/
+# │   ├── images/
+# │   │   ├── image1.jpg
+# │   │   ├── image2.jpg
+# │   │   └── ...
+# │   └── labels/
+# │       ├── image1.txt
+# │       ├── image2.txt  
+# │       └── ...
+# ├── val/
+# │   ├── images/
+# │   └── labels/
+# └── test/
+#     ├── images/
+#     └── labels/
+
+# Annotation formatı (YOLO format):
+# Her .txt dosyası karşılık gelen görüntü için bounding box'ları içerir
+# Format: class_id center_x center_y width height
+# Tüm değerler 0-1 arasında normalize edilmiş olmalıdır
+# Örnek: 0 0.5 0.3 0.4 0.2
+#   - class_id: 0 (license_plate)
+#   - center_x: 0.5 (görüntü genişliğinin %50'si)  
+#   - center_y: 0.3 (görüntü yüksekliğinin %30'u)
+#   - width: 0.4 (görüntü genişliğinin %40'ı)
+#   - height: 0.2 (görüntü yüksekliğinin %20'si)
