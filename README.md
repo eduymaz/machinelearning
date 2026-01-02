@@ -1,6 +1,6 @@
 # 🚀 Makine Öğrenimi | TRKCL - GYK Eğitimi
 
-Bu repository, Turkcell Geleceği Yazan Kadınlar eğitim programı kapsamında geliştirilen projeleri ve eğitim materyallerini içermektedir.
+![rozet](./rozet.png) Bu repository, Turkcell Geleceği Yazan Kadınlar eğitim programı kapsamında geliştirilen projeleri ve eğitim materyallerini içermektedir.
 
 ## 📁 Proje Yapısı
 
